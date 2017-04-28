@@ -17,6 +17,15 @@
     
   </test> 
   
+  <test name="FirefoxTest">
+  <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="sampleProject.SampleProjectExecution"/>
+    </classes>
+    
+  </test> 
+  
   
   <!-- Test -->
 </suite> <!-- Suite -->
+
