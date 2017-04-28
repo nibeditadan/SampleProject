@@ -18,11 +18,12 @@ public class SampleProjectExecution {
 			if (browser.equalsIgnoreCase("Chrome")) {
 				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//drivers//chromedriver.exe");
 				WebDriver driver=new ChromeDriver();
-				driver.get("http://gmail.com");
-				driver.findElement(By.id("identifierId")).sendKeys("nibeditadan");
-				driver.findElement(By.xpath("//div[@id='identifierNext']/content")).click();
-				//driver.findElement(By.id("Email")).sendKeys("nibeditadan");
-				//driver.findElement(By.id("next")).click();
+				driver.get("https://mycase2-stage.cloudapps.cisco.com/case");
+				driver.findElement(By.id("userInput")).sendKeys("charhall");
+				driver.findElement(By.id("passwordInput")).sendKeys("welcome");
+				driver.findElement(By.id("login-button")).click();
+				
+				
 				
 			}
 			else if(browser.equalsIgnoreCase("IE")){
@@ -31,10 +32,22 @@ public class SampleProjectExecution {
 				capability.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 				capability.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);				
 				WebDriver driver = new InternetExplorerDriver(capability);					
-				driver.get("http://gmail.com");
-				driver.findElement(By.xpath("//div[@class='gmail-nav__nav-links-wrap']/a[2]")).click();
-				driver.findElement(By.id("Email")).sendKeys("nibeditadan");
-				driver.findElement(By.id("next")).click();
+				driver.get("https://mycase2-stage.cloudapps.cisco.com/case");
+				driver.findElement(By.id("userInput")).sendKeys("charhall");
+				driver.findElement(By.id("passwordInput")).sendKeys("welcome");
+				driver.findElement(By.id("login-button")).click();
+				
+				
+			}
+			else if(browser.equalsIgnoreCase("Firefox")){
+				System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//drivers//geckodriver.exe");
+				WebDriver driver=new FirefoxDriver();
+				driver.get("https://mycase2-stage.cloudapps.cisco.com/case");
+				driver.findElement(By.id("userInput")).sendKeys("charhall");
+				driver.findElement(By.id("passwordInput")).sendKeys("welcome");
+				driver.findElement(By.id("login-button")).click();
+				
+				
 			}
 		}
 			catch(Exception e){
