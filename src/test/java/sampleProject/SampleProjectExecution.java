@@ -3,6 +3,7 @@ package sampleProject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Parameters;
@@ -23,7 +24,7 @@ public class SampleProjectExecution {
 				driver.findElement(By.id("passwordInput")).sendKeys("welcome");
 				driver.findElement(By.id("login-button")).click();
 				
-				
+				System.out.println("this is to test merge");
 				
 			}
 			else if(browser.equalsIgnoreCase("IE")){
