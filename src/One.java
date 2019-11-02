@@ -1,5 +1,6 @@
 class One{
   int n;
-  int p;
+  int o;
   int t;
+  int a;
 }
