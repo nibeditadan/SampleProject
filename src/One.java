@@ -2,5 +2,5 @@ class One{
   int n;
   int o;
   int t;
-  int a;
+  int a=11;
 }
