@@ -4,12 +4,12 @@
   <test name="ChromeTest">
   <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="sampleProject.SampleProjectExecution"/>
+      <class name="sampleProject.ExtentReportsClass"/>
     </classes>
     
   </test> 
   
-   <test name="IETest">
+   <!--  <test name="IETest">
   <parameter name="browser" value="IE"/>
     <classes>
       <class name="sampleProject.SampleProjectExecution"/>
@@ -23,8 +23,9 @@
       <class name="sampleProject.SampleProjectExecution"/>
     </classes>
     
-  </test> 
+  </test>  -->
   
+   
   
   <!-- Test -->
 </suite> <!-- Suite -->
