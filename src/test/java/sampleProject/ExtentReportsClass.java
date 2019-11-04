@@ -84,7 +84,7 @@ System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//d
  logger.createNode("Image is Present");
  Assert.assertTrue(img);
  logger.createNode("Image is not Present");
- Assert.assertFalse(img);
+ Assert.assertTrue(img);
  }
  
  @AfterMethod
